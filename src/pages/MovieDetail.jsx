@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import api from '../api';
 
 function MovieDetail() {
+  //pega da url
   const { id } = useParams();
   const [movie, setMovie] = useState(null);
 

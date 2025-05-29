@@ -34,7 +34,6 @@ function Home() {
       <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         {movies.map(movie => <MovieCard key={movie.imdbID} movie={movie} />)}
       </div>
-      <h1>Ola Mundo</h1>
       <div style={{ marginTop: 20 }}>
         <button onClick={() => setPage(p => Math.max(1, p - 1))} disabled={page === 1}>Anterior</button>
         <span style={{ margin: '0 10px' }}>Página {page} de {totalPages}</span>
